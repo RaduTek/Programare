@@ -1,7 +1,8 @@
-#include <iostream>
-#include <cstring>
+#include <bits/stdc++.h>
 
 using namespace std;
+
+ifstream fin("date.in");
 
 bool sub(char s[]) {
     int len = strlen(s);
@@ -16,10 +17,10 @@ bool sub(char s[]) {
 int main() {
     int n, ok=false;
     char s[20];
-    cin >> n;
-    cin.get();
+    fin >> n;
+    fin.get();
     for (int i=0; i < n; i++) {
-        cin >> s;
+        fin >> s;
         if (sub(s)) {
             ok = true;
             cout << s << '\n';
